@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.video {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
+  width: 100%;
+  height: fit-content;
+}
+
+/*---------header--------------*/
+
+.header {
+  background: transparent;
+  width: 100%;
+  height: fit-content;
+
+
+  display: flex;
+  box-shadow: 0px 0px 10px white;
+  color: white;
+  justify-content: space-around;
+}
+.title {
+  font-family: "chiller";
+  font-weight: bold;
+  color: white;
+  margin: 10px 0px;
+  cursor: pointer;
+  display: inline-block;
+
+}
+.title h1{
+	font-size: 72px;
+}
+.title h1:hover{
+  -webkit-text-stroke:1px #fff;
+  color: transparent;
+}
+
+/*-----------------login--------------------*/
+
+.login-register {
+  top: 300px;
+  left: 90px;
+  position: absolute;
+}
+
+.log-reg-form {
+  background: transparent;
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px #fff;
+  top: 50%;
+  margin: 0px;
+}
+
+.log-reg-form span {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 10px;
+  color: grey;
+  width: 100px;
+  cursor: pointer;
+  display: inline-block;
+
+}
+.log-reg-form span:hover {
+  color: #fff;
+}
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+.log-reg-form form {
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
+}
+.log-reg-form form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  color: white;
+}
+
+.log-reg-form form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 10px #fff;
+}
+.log-reg-form form .btn:hover {
+  transform: scale(1.05);
+}
+.log-reg-form form .btn:focus {
+  outline: none;
+}
+#Login {
+  left: -300px;
+}
+#Register {
+  left: 0;
+}
+.log-reg-form button {
+  font-size: 20px;
+}
+#scroll {
+  width: 75px;
+  border: none;
+  background: #fff;
+  height: 3px;
+  margin-top: 10px;
+  transform: translateX(150px);
+  transition: transform 1s;
+  font-weight: bold;
+}
+
+/*------------------content--------------------*/
+
+.content{
+  position: absolute;
+  right: 10px;
+  top: 250px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+	text-align:center;
+}
+.line{
+	color: white;
+	font-family: "chiller";
+	font-size: 40px;
+	text-align:center;
+}
+
+/*-----------application form-----------*/
+
+.application-form{
+	width: 450px;
+	height: 500px;
+	background: transparent;
+	box-shadow: 0px 0px 10px lightgrey;
+	margin: 20px;
+	border-radius: 20px;
+	padding: 25px;
+}
+.app-form{
+	
+	width: 100%;
+
+}
+.app-form form input{
+	width: 90%;
+  	height: 30px;
+  	margin: 10px 0;
+  	padding: 0 10px;
+ 	border: none;
+  	outline: none;
+  	border-bottom: 2px solid #fff;
+  	background: transparent;
+  	color: white;
+}
+.app-form form textarea{
+	width: 90%;
+  	height: 30px;
+  	margin: 10px 0;
+  	padding: 0 10px;
+ 	border: none;
+  	outline: none;
+  	border-bottom: 2px solid #fff;
+  	background: transparent;
+  	color: white;
+}
+.app-form form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 10px #fff;
+
+}
+.app-form form input::placeholder{
+	color: lightgrey;
+}
+.app-form form textarea::placeholder{
+	color: lightgrey;
+}
+.app-form form .btn:hover {
+  transform: scale(1.05);
+}
+.app-form form .btn:focus {
+  outline: none;
+  }
+
+ .app-form button{
+ 	font-size: 20px;
+ }
+ .line{
+ 	font-size: 30px;
+ }
+/*----------------footer---------------*/
+
+.footer {
+  background: transparent;
+
+
+
+  display: flex;
+  box-shadow: 0px 0px 10px white;
+  color: white;
+  justify-content: space-between;
+}
+.footer{
+	    position: relative;
+    width: 100%;
+    height: fit-content;
+    top: 1100px;
+	}
+
+.copyright ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.copyright ul li {
+  color: lightgrey;
+  margin: 0px 20px;
+  list-style: none;
+}
+.copyright ul li i:hover{
+  color: black;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.copyright{
+  display: inline-block;
+  margin: 25px 0px;
+  font-size: 18px;
+  color: lightgrey;
+  cursor: pointer;
+}
+.copyright:hover{
+	text-decoration: underline;
+}
+.container.app-footer{
+	 display: flex; 
+	 justify-content:space-between;
+}
+
+@media (max-width:1400px){
+
+	.login-register{
+		top: 125px;
+	}
+	.log-reg-form {
+		height: 400px;
+		width: 300px;
+	}
+
+	.footer{
+	    position: relative;
+    width: 100%;
+    height: fit-content;
+    top: 1100px;
+	}
+}
+
+@media (max-width:1100px){
+	.row{
+		flex-direction: column;
+	}
+	body{
+		background-repeat: repeat-y;
+	}
+	.footer{
+	    position: relative;
+    width: 100%;
+    height: fit-content;
+    top: 1500px;
+	}
+}
+@media (max-width:900px){
+	.content{
+		position: absolute;
+		top: 75%;
+		bottom: 20px;
+
+	}
+	.login-register{
+		left: 50px;
+	}
+	.content{
+		    position: relative;
+    width: 100%;
+    margin: 10px 10px;
+    align-content: center;
+    display: flex;
+    text-align: center;
+    
+    top: 500px;
+    right: 0px;
+	}
+	.line{
+		margin: 5px;
+	}
+	.footer{
+	    position: relative;
+    width: 100%;
+    height: fit-content;
+    top: 500px;
+	}
+}
+@media (max-width:600px){
+	.title h1{
+		font-size: 48px;
+	}
+	.line{
+		font-size: 25px;
+	}
+	.application-form{
+		height: 400px;
+		width: 270px;
+	}
+	.copyright{
+		font-size: 16px;
+		margin: 10px 5px;		
+	}
+	.copyright ul{		
+		font-size: 12px;
+	}
+	.log-reg-form{
+		margin: 0px;
+		padding: 0px;
+	}
+	.login-register{
+		padding: 0px;
+	}
+	.content{
+		    position: relative;
+    width: 100%;
+    margin: 10px 10px;
+    align-content: center;
+    display: flex;
+    text-align: center;
+    top: 550px;
+    right: 0px;
+    height: fit-content;
+	}
+	.line{
+		margin: 5px;
+	}
+	.footer{
+	    position: relative;
+    width: 100%;
+    height: fit-content;
+    top: 600px;
+	}
+}
+
+
